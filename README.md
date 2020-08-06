@@ -1,6 +1,8 @@
 # Conhecendo à linguagem PHP
 São apenas exercícios para estudo, onde irei aprender o que são variáveis, operadores, includes e requires 
 
+
+<h1>Declaração de váriaveis</h1>
 $anoNascimento = 1998; //Inteiro		
 
 $nomeCompleto = "Francisco de Assis Lima "; //String
@@ -26,6 +28,8 @@ Ex:
 
 ______________________________________________________________________________________________________
 
+<h1>Apagar e verificar se a váriavel existe</h1>
+
 Limpar uma variavel, usamos o método UNSET e para ver se a variavel existe, podemos usar o ISSET. 
 
 $nome = "Francisco";
@@ -43,4 +47,3 @@ if(isset($nome)){
 
 _______________________________________________________________________________
 
-<h1>Concatenação</h1>
