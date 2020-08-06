@@ -24,8 +24,16 @@ Ex:
 
 ______________________________________________________________________________________________________
 
-Limpar uma variavel, usamos o método UNSET. 
+Limpar uma variavel, usamos o método UNSET e para ver se a variavel existe, podemos usar o ISSET. 
 
 $nome = "Francisco";
 
-unset($nome);
+unset($nome);// Apaga a variavel
+
+
+if(isset($nome)){
+//Verifica se a variavel existe
+
+   echo $nome;
+}
+
