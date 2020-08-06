@@ -1,11 +1,11 @@
 # Conhecendo à linguagem PHP
 São apenas exercícios para estudo, onde irei aprender o que são variáveis, operadores, includes e requires 
 
-- $anoNascimento = 1998; //Inteiro		
-- $nomeCompleto = "Francisco de Assis Lima "; //String
-- $sexo = "F"; //Caractere
-- $altura = 1.75 //float ou Double (Número real)
-- $feliz = true //boolean
+$anoNascimento = 1998; //Inteiro		
+$nomeCompleto = "Francisco de Assis Lima "; //String
+$sexo = "F"; //Caractere
+$altura = 1.75 //float ou Double (Número real)
+$feliz = true //boolean
 
 
 
