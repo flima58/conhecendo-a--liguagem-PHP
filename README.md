@@ -1,10 +1,15 @@
 # Conhecendo à linguagem PHP
 São apenas exercícios para estudo, onde irei aprender o que são variáveis, operadores, includes e requires 
 
-- $anoNascimento = 1998 // Inteiro		
-- $nomeCompleto = "Francisco de Assis Lima " // String
+- $anoNascimento = 1998; //Inteiro		
+- $nomeCompleto = "Francisco de Assis Lima "; //String
+- $sexo = "F"; //Caractere
+- $altura = 1.75 //float ou Double (Número real)
+- $feliz = true //boolean
 
-* Para executarmos uma variavel usamos o ECHO para que 
+
+
+* Para executarmos uma variavel usamos o ECHO.
 Ex: 
    echo $nome; //executa a variavel
        
