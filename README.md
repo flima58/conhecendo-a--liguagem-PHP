@@ -7,18 +7,20 @@ $nomeCompleto = "Francisco de Assis Lima "; //String
 
 $sexo = "F"; //Caractere
 
-$altura = 1.75 //float ou Double (Número real)
+$altura = 1.75; //float ou Double (Número real)
 
-$feliz = true //boolean
+$feliz = true; //boolean
 
 
 
 * Para executarmos uma variavel usamos o ECHO.
+
 Ex: 
    echo $nome; //executa a variavel
        
        
 * Para visualizarmos os dados de uma variavel, usaremos o método VAR_DUMP
+
 Ex: 
    var_dump($nome); //Mostra o valor e quantos caracteres estão sendo usado
 
@@ -32,6 +34,7 @@ unset($nome);// Apaga a variavel
 
 
 if(isset($nome)){
+
 //Verifica se a variavel existe
 
    echo $nome;
