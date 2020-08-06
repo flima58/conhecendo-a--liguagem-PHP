@@ -17,3 +17,11 @@ Ex:
 * Para visualizarmos os dados de uma variavel, usaremos o método VAR_DUMP
 Ex: 
    var_dump($nome); //Mostra o valor e quantos caracteres estão sendo usado
+
+______________________________________________________________________________________________________
+
+Limpar uma variavel, usamos o método UNSET. 
+
+$nome = "Francisco";
+
+unset($nome);
