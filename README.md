@@ -91,4 +91,31 @@ ________________________________________________________________________________
 <p> $nomeCompleto = "Meu nome é {$nome} {$sobrenome}";</p>
 <p>$nomeCompleto = "Meu nome é".$nome." ". $sobrenome;</p>
 
+______________________________________________________________________________________________________
 
+<h1>Escopo de Variável</h1>
+
+<p>Variáveis que estão fora do escopo não podem ser acessadas, a não ser que eu use a palavra resevada GLOBAL (Temos que colcoar isso por função).</p>
+
+
+<h6>Exemplo</h6>
+
+  $nome = "Francisco";
+
+   function teste(){
+
+      global $nome;
+      echo $nome;
+
+   }
+
+
+   function teste2(){
+
+    global $nome;
+
+    echo "<br>Agora no teste2: ".$nome;
+   }
+
+   teste();
+   teste2()
