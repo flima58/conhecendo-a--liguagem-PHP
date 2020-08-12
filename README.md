@@ -119,4 +119,9 @@ ________________________________________________________________________________
 
    teste();
    teste2()
- 
+ _____________________________________________________________________________________________
+
+ <h1>Operadores no PHP</h1>
+
+ <p> 1 - Operadores de atribuição ( = )</p>
+ <span>Exemplo: $nome = "Francisco"; O Igual quer dizer que o Valor (Francisco) está sendo atribuido a variável $nome </span>
