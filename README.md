@@ -125,3 +125,77 @@ ________________________________________________________________________________
 
  <p> 1 - Operadores de atribuição ( = )</p>
  <span>Exemplo: $nome = "Francisco"; O Igual quer dizer que o Valor (Francisco) está sendo atribuido a variável $nome </span>
+
+
+ <p> 2 - Operadores aritméticos</p>
+
+<p>Os operadores aritméticos são usados para resolver expressões matematicas</p>
+
+<ul>
+   <li> + -> Soma</li>
+   <li> - -> Subtração</li>
+   <li> / -> Divisão</li>
+   <li> * -> Multiplicação</li>
+   <li> % -> Modulo (Faz uma divisão e pega o resto, ou seja faz a divisão com numeros inteiros) </li>
+</ul>
+
+
+ <p>Exemplo de como pode ser usado as expressões </p>
+
+$soma = $n1 + $n2;
+echo $soma."<br>";
+
+// Também podemos fazer a operação coforme abaixo, para economozarmos na memoria com variaveis
+$n1 += $n2;
+echo $n1;
+
+<p>Assim podemos usar para todas as expressões.</p>
+
+<p> 2 - Operadores de comparação</p>
+
+<ul>
+   <li> > (Maior) </li>
+   <li> < (Menor)</li>
+   <li> >= (Maior ou igual)</li>
+   <li> <= (Menor ou igual)</li>
+   <li> && (E) </li>
+   <li> || (OU)</li>
+   <li> == (Igual)</li>
+   <li> === (Identico)</li>
+   <li> != OU <> (Diferente)</li>
+   <li>!== (Vendo se as variaveis não são identicas </li>
+   <li>! $a (Se a variavel ou a expressão for verdadeira, acaba ficando falsa, e se for falsa, fica verdadeira) </li>
+</ul>
+
+<h6>Operador Spaceship</h6>
+
+<p>a expressão se monta dessa forma $a <=> $b</p>
+
+<ul>
+   <li>( -1 ) - Aparece se a primeira variavel for menor que a segunda</li>
+   <li>(  0 ) - Aparece se a primeira variavel for igual a segunda</li>
+   <li>(  1 ) - Aparece se a primeira variavel for maior que a segunda</li>
+</ul>
+
+<h6>Operador Null Coalesce </h6>
+
+<p> Esse operador verífica em qual variavel tem algum valor que não seja NULL priemiro</p>
+
+<p>$n1 = NULL;</p>
+<p>$n2 = NULL;</p>
+<p>$n3 = 2;</p>
+
+<br>
+
+<p>echo $n1 ?? $n2 ?? $n3;</p>
+
+<p>No caso acima a variavel que será imprimida será a $n3</p>
+
+<p> 3 - Operadores de incremento e decremento</p>
+
+ <ul>
+   <li>$a++ (Ele executa e depois incrementa)</li>
+   <li>++$a (Ele incrementa depois executa)</li>
+   <li>$a-- (Ele executa e depois decrementa)</li>
+   <li>--$a (Ele decrementa e depois executa</li>
+ </ul>
