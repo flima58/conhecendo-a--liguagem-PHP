@@ -199,3 +199,83 @@ echo $n1;
    <li>$a-- (Ele executa e depois decrementa)</li>
    <li>--$a (Ele decrementa e depois executa</li>
  </ul>
+
+
+ ________________________________________________________________________________________
+
+ <h3>Manipular String</h3>
+
+ <p> Nesse tópico, vamos apresentar algumas funções manipulo string</p>
+
+<h6>A diferença entre aspas</h6>
+
+<p>Se eu fizer um echo e colocar aspas duplas ( " " ), eu consigo colocar as variaveis dentro das aspas, caso eu coloque aspas simples ( ' ' ), aparece qual variavel estou usando, ela entende que tudo é texto.</p>
+
+<strong>Exemplo</strong>
+
+<div>
+echo "<p>$nome $sobrenome</p>";<br>
+echo '<p>$nome $sobrenome</p>';
+</div>
+
+<h6>Funções para string</h6>
+
+<strong>STRTOUPPER</strong>
+
+<p>Essa função deixa todas as letras  dentro da váriavel Maiuscula.</p>
+<p>$nome1 = "francisco";</p>
+<p>echo strtoupper($nome1);</p>
+
+<strong>STRTOLOWER</strong>
+
+<p>Essa função deixa todas as letras  dentro da váriavel Minuscula.</p>
+<p>$nome2 = "FRANCISCO";</p>
+<p>echo strtolower($nome2);</p>
+
+
+<strong>UCWORDS e UCFIRST</strong>
+
+<p>Uma funções tem como objetivo deixar todas as primeiras letras de uma frase Maiuscula (UCWORDS), e a outra tem como deixar a primeira letra de uma frase, Maiucula (UCFIRST)</p>
+
+<p>$frase = "O rato roeu a ropa do rei de roma"</p>
+
+<p>echo ucwords($frase); --  deixa primeira letra de todas as palavras em maiuscula</p>
+<p><strong>Impressão:</strong> O Rato Roeu A Ropa Do Rei De Roma</p>
+
+<br>
+
+<p>echo ucfirst($frase) -- Deixa a primeira letra da frase maiuscula</p>
+<p><strong>Impressão:</strong> O rato roeu a ropa do rei de roma</p>
+
+<strong>STR_REPLACE</strong>
+
+<p>caso você pecise substituir algo de uma variavel, o str_replace é uma boa opção, ele funciona desse modo.</p>
+
+<p>$nome = "Francisco"</p>
+<p>$nome = str_replace('o' (* O caractere que deve ser procurado*),'0'(*O caractere para qual deve ser substituido*), $nome (*Varívael onde deve ser pesquisado*))</p>
+
+
+<strong>STRPOS e </strong>
+<p>Pega a posição da palavra de você pesquisou.</p>
+
+<p>Exemplo:</p>
+
+<p>$frase2 = "O rato roeu a ropa do rei de roma";</p>
+<p>$posi = strpos($frase2 **Variavel onde a função vsai procurar**, 'roeu' ** Qual palavra a função vai procurar**);</p>
+<p>echo "Posição: ".$posi;</p>
+
+<strong></strong>
+
+<p>Pegar caracteres que estão antes da posição mencionada.</p>
+<p>Exemplo:</p>
+
+<p>$frase2 = "O rato roeu a ropa do rei de roma";</p>
+<p>$palavra = "roeu";</p>
+<p>$posi = strpos($frase2,$palavra );</p>
+
+<p>$text = substr($frase,0 /*Apartir do 0 eu quero procurar o text*/, $posi /*até onde quero ir*/ );</p>
+
+<p>Para pegar todo o texto depois da palavra mãe </p>
+
+<p>$text2 = substr($frase, $posi + strlen($palavra), strlen($frase));</p>
+
