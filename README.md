@@ -279,3 +279,29 @@ echo '<p>$nome $sobrenome</p>';
 
 <p>$text2 = substr($frase, $posi + strlen($palavra), strlen($frase));</p>
 
+
+<h3>Include e Require</h3>
+
+<strong>Qual a diferença entre os dois comandos, Include e require?</strong>
+<p> O Require obriga que o arquivo exista, e que o arquivo esteja funcionando corretamente. se não suprir esses requisitos, o arquivo ao todo não aparece,gera um erro fatal, mas hoje em dia o erro fatal ele gera uma exceção, que pode ser tratada com try- catch </p>
+
+<p>Já o include tenta funcionar mesmo que o arquivo nao exista, mostra o erro e executao o resto dos arquivos, alé, de possuir mais recursos</p>
+
+<p>Exemplo de sitaxe:</p>
+
+<p>require "includes/function1.php";</p>
+<p>include "includes/function.php";</p>
+
+<p>Podemos usar a o include_once ou require_once, se o código de um arquivo já foi incluído, ele não será incluído novamente</p>
+
+<p>Exemplo de sitaxe:</p>
+
+<p>require_once "includes/function1.php";</p>
+<p>include_once "includes/function.php";</p>
+
+<p>Caso seja incluido Duas vezes, ele incluira apenas o primeiro e logo depois irá ignorar o a outra inclusão duplicada.</p>
+
+<strong>Caso queira saber mais, irei começar mais um repositorio sobre Estrutura de controle e laçoes de repetição.</strong>
+
+
+
